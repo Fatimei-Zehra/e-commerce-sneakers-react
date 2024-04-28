@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Components/main.css"
 import shoes from "../img/1.jpg"
 import shoes2 from "../img/2.jpg"
@@ -8,6 +8,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 function Main() {
+    const [count, b] = useState(0);
+
+    function increment() {
+        b(function (num) {
+            return (num += 1)
+        })
+    }
+
+    function decrement() {
+        b(function (num) {
+            if (num > 0) {
+                return (num -= 1);
+            } else {
+                return (num = 0);
+            }
+        })
+    }
     return (
         <div>
             <section id='section'>
@@ -51,15 +68,15 @@ function Main() {
 
                             <div className="product-buttons">
                                 <div className="counter">
-                                    <FontAwesomeIcon icon={faMinus} className='plus-minus' />
-                                    <span>0</span>
-                                    <FontAwesomeIcon icon={faPlus} className='plus-minus' />
+                                    <FontAwesomeIcon icon={faMinus} className='plus-minus' onClick={decrement} />
+                                    <span>{count}</span>
+                                    <FontAwesomeIcon icon={faPlus} className='plus-minus' onClick={increment} />
                                 </div>
 
                                 <div className="add-cart">
-                                  
+
                                     <button id='cart'>
-                                    <FontAwesomeIcon icon={faCartShopping} id='cart-icon' />
+                                        <FontAwesomeIcon icon={faCartShopping} id='cart-icon' />
                                         Add to cart</button>
                                 </div>
                             </div>

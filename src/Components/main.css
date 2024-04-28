@@ -106,12 +106,12 @@
     font-size: 0.97em;
 }
 
-.product-buttons{
+.product-buttons {
     margin-top: 35px;
     display: flex;
 }
 
-.counter{
+.counter {
     width: 157px;
     padding: 0 16px;
     height: 55px;
@@ -123,12 +123,13 @@
     margin-right: 20px;
 }
 
-.plus-minus{
+.plus-minus {
     color: #ff7d1a;
     font-weight: 700;
+    cursor: pointer;
 }
 
-#cart{
+#cart {
     height: 55px;
     background-color: #ff7d1a;
     outline: none;
@@ -137,8 +138,15 @@
     font-size: 0.95em;
     border-radius: 10px;
     color: #FFF;
+    cursor: pointer;
 }
 
-#cart-icon{
+#cart:hover {
+    transition: ease 0.2s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#cart-icon {
     margin-right: 10px;
 }
