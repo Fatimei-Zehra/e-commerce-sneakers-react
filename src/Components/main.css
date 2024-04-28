@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.image-items {
+    width: 445px;
+    height: 445px;
+    border-radius: 10px;
+}
+
+.image-items>img {
+    width: 100%;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+}
+
+.section-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.image-properties {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.image-properties div {
+    width: 88px;
+    height: 88px;
+}
+
+.image-properties>div>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-right-items {
+    width: 50%;
+    padding: 0px 12px;
+    padding-top: 65px;
+}
+
+#company-name {
+    color: #ff7d1a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#product-title {
+    font-size: 2.75em;
+    margin-bottom: 30px;
+}
+
+#product-text {
+    color: #68707d;
+    font-size: 1em;
+    margin-bottom: 25px;
+    line-height: 1.64em;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#price-now {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #000;
+    margin-right: 15px;
+}
+
+#discount {
+    font-size: 1em;
+    color: #ff7d1a;
+    font-weight: 700;
+    background-color: #ffede0;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.original-price {
+    margin-top: 10px;
+}
+
+.original-price>del {
+    color: #b0b2bf;
+    font-weight: 700;
+    font-size: 0.97em;
+}
+
+.product-buttons{
+    margin-top: 35px;
+    display: flex;
+}
+
+.counter{
+    width: 157px;
+    padding: 0 16px;
+    height: 55px;
+    background-color: #f7f8fd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.plus-minus{
+    color: #ff7d1a;
+    font-weight: 700;
+}
+
+#cart{
+    height: 55px;
+    background-color: #ff7d1a;
+    outline: none;
+    border: none;
+    width: 270px;
+    font-size: 0.95em;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+#cart-icon{
+    margin-right: 10px;
+}
