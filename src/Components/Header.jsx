@@ -34,7 +34,7 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                    <div className="line"></div>
+                    {/* <div className="line"></div> */}
                 </div>
             </header>
 
