@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import "../Components/header.css"
 import myImage from "../img/image-avatar.png"
 
 function Header() {
+
+    const [isVisible, serVisible] = useState(false);
+
+   
     return (
         <div>
             <header>
@@ -26,11 +30,19 @@ function Header() {
                         </div>
 
                         <div className="header-right-items">
-                           <div id='icon'>
-                           <FontAwesomeIcon icon={faCartShopping} />
-                           </div>
+                            <div id='icon'>
+                                <FontAwesomeIcon icon={faCartShopping} />
+                                <div className="dropdown-cart">
+                                    <p>Cart</p>
+
+                                    <div className="button-cart">
+                                        <button id='checkout-btn'>Checkout</button>
+                                    </div>
+                                </div>
+
+                            </div>
                             <div className="profile">
-                                <img src={myImage} alt="photo" className='image-pp'/>
+                                <img src={myImage} alt="photo" className='image-pp' />
                             </div>
                         </div>
                     </div>

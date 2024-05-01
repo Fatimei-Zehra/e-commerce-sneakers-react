@@ -25,6 +25,13 @@ function Main() {
             }
         })
     }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log('You clicked submit.');
+        
+      }
+
     return (
         <div>
             <section id='section'>
@@ -32,7 +39,7 @@ function Main() {
                     <div className="section-items">
                         <div className="section-left-items">
                             <div className="image-items">
-                                <img src={shoes} alt="" />
+                                <img src={shoes} alt="" onClick={handleSubmit} />
                             </div>
                             <div className='image-properties'>
                                 <div>
